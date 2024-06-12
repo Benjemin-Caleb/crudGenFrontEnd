@@ -1,5 +1,7 @@
+import Dataonly from './Dataonly.json' with {type: 'json'};
+
 let StartFunc = async () => {
-    let jVarLocalFetchUrl = `/bin/pos/DataOnly`;
+    let jVarLocalFetchUrl = Dataonly;
 
     let response = await fetch(jVarLocalFetchUrl);
     let data = await response.json();
